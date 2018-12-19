@@ -1,5 +1,5 @@
-﻿date;account;category;amount;currency;convertedamount;currency;description
+date;account;category;amount;currency;convertedamount;currency;description
 01/12/2018;Наличные;Сбережения;2808;RUB;2808;RUB;Сумма для тестов
 02/12/2018;Наличные;Канцтовары;-200;RUB;-200;RUB;Канц. Товары
 03/12/2018;Моя карта;Сбережения;10000;RUB;10000;RUB;Сумма для тестов
-04/12/2018;Моя карта;To 'Наличные';	-6500;RUB;-6500;RUB;Проверка распознавания перевода
+04/12/2018;Моя карта;To 'Наличные';-6500;RUB;-6500;RUB;Проверка распознавания перевода
