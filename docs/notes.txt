@@ -21,3 +21,15 @@ paymode - тип платежа
 8:электронный платеж
 9:Депозит
 10:FI Гонорар
+
+==================================================
+date; 			= 	date;
+account; 		= 	payee;
+category; 		= 	category
+amount; 		= 	amount;
+-currency;
+-converted amount;
+-currency;
+description 	=	info;|description;
+(?)[Вычисляемый]=	paymode;
+==================================================
