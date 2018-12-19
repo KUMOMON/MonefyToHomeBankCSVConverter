@@ -1,5 +1,6 @@
 # importing csv module
 import csv
+from datetime import datetime
 
 # csv file name
 filename = 'testfile.csv'
@@ -8,8 +9,10 @@ filename = 'testfile.csv'
 fields = []
 rows = []
 
+
+# read data from input csv
 with open(filename, encoding='utf8') as csvfile:
-    csvreader = csv.reader(csvfile,delimiter=';' )
+    csvreader = csv.reader(csvfile, delimiter=';')
     """for row in csvreader:
         print(', '.join(row))"""
 
@@ -18,6 +21,6 @@ with open(filename, encoding='utf8') as csvfile:
 
     # extracting each data row one by one
     for row in csvreader:
-        rows.append(row)
-
+        # tmp = row;
+        rows.append([datetime.strptime(row[0],'%d/%m/%Y').strftime('%d-%m-%Y'),'0',row[7],row[1],"",row[3],row[2]])
     pass

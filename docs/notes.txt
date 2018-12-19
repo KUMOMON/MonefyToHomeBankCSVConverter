@@ -4,6 +4,7 @@ date;		account;	category;		amount;	currency;	converted amount;	currency;	descrip
 02/12/2018;	Наличные;	Канцтовары;		-200;	RUB;		-200;				RUB;		Канц. Товары
 03/12/2018;	Моя карта;	Сбережения;		10000;	RUB;		10000;				RUB;		Сумма для тестов
 04/12/2018;	Моя карта;	To 'Наличные';	-6500;	RUB;		-6500;				RUB;		Проверка распознавания перевода
+04/12/2018;	Наличные;	From 'Моя карта';6500;	RUB;		6500;				RUB;		Проверка распознавания перевода
 ---------------------test-output-data--------------------------------------------
 date; 		paymode; 	info; 			payee; 	description;	amount; 			category
 15-02-04;	0;			;				;		Some cash;		-40,00;				Bill:Withdrawal of cash
