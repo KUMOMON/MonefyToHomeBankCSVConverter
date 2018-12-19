@@ -1,0 +1,103 @@
+<html>
+<head>
+  <title>Budget dialog</title>
+  
+  <meta http-equiv="Content-Type" content="text/html">
+  <link rel="stylesheet" href="help.css">
+</head>
+<body bgcolor="#ffffff">
+<table border="0" cellspacing="0" cellpadding="0">
+  <tr>
+    <td width="27"><a href="main.html"><img src="images/go-home.png" width="27" height="27" border="0"></a></td>
+    <td width="27"><a href="04tran.html"><img src="images/go-previous.png" width="27" height="27" border="0"></a></td>
+    <td width="27"><a href="99filt.html"><img src="images/go-next.png" width="27" height="27" border="0"></a></td>
+  </tr>
+</table>
+<div class="head"></div>
+
+<h1>Budget dialog</h1>
+
+<div class="gtkshot">
+<img src="images/04budget1.png">
+</div>
+
+<p>
+The budget dialog is the main interface to edit, modify and manage your budgets. Please refer to the <a href="02concepts.html#budget">basic concepts</a>
+for more explanations on budgets in HomeBank.
+</p>
+
+
+<h2>Dialog call</h2>
+This dialog can be called in the following way:
+<ul>
+<li>from the mainwindow-menu: Manage / Budget
+<li>from the mainwindow-toolbar.
+</ul>
+
+
+<h2>Using budget dialog</h2>
+
+<h3><img src="images/1.png"> Categories list</h3>
+<div class="gtkgroup">
+display the list of categories and subcategories of the current wallet.<br>
+bold categories signals a budgeted category.
+</div>
+
+<h3><img src="images/2.png"> Budget for each month</h3>
+<div class="gtkgroup">
+  <table class="widgetinfo">
+    <tr>
+      <td class="wname">is the same</td>
+      <td class="winfo">
+      category budget will be the same for every month: Jan -> Dec<br>
+      you can then fill the amount below
+      </td>
+    </tr>
+    <tr>
+      <td class="wname">is different</td>
+      <td class="winfo">
+      category budget will be specific each month<br>
+      you can then fill the amount of each needed months
+      </td>
+    </tr>
+	<TR>
+		<td class="wname">
+			<P>Zoom X</P>
+		</TD>
+		<td class="winfo">
+			<P>select the X zoom factor.
+			</P>
+		</TD>
+	</TR>
+  </table>
+</div>
+
+<h3><img src="images/3.png"> Buttons</h3>
+<div class="gtkgroup">
+  <table class="widgetinfo">
+    <tr>
+      <td class="wname">Clear</td>
+      <td class="winfo">
+      clear any budget for the selected category
+      </td>
+    </tr>
+    <tr>
+      <td class="wname">Import</td>
+      <td class="winfo">
+      import the budget from a csv file.<br>
+      See <a href="06csvformat.html#bud">csv file format</a> for details.
+      </td>
+    </tr>
+    <tr>
+      <td class="wname">Export</td>
+      <td class="winfo">
+      export the budget to a csv file.<br>
+      See <a href="06csvformat.html#bud">csv file format</a> for details.
+      </td>
+    </tr>
+  </table>
+</div>
+
+
+</body>
+</html>

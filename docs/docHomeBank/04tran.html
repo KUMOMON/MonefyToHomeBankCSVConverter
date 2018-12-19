@@ -1,0 +1,218 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>Transactions dialog</TITLE>
+	<link rel="stylesheet" href="help.css">
+</HEAD>
+<BODY >
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: always">
+	<TR>
+		<TD WIDTH=27>
+			<A HREF="main.html"><IMG SRC="images/go-home.png" NAME="graphics1" ALIGN=BOTTOM WIDTH=27 HEIGHT=27 BORDER=0></A>
+		</TD>
+		<TD WIDTH=27>
+			<A HREF="04arch.html"><IMG SRC="images/go-previous.png" NAME="graphics2" ALIGN=BOTTOM WIDTH=27 HEIGHT=27 BORDER=0></A>
+		</TD>
+		<TD WIDTH=27>
+			<A HREF="04bud1.html"><IMG SRC="images/go-next.png" NAME="graphics3" ALIGN=BOTTOM WIDTH=27 HEIGHT=27 BORDER=0></A>
+		</TD>
+	</TR>
+</TABLE>
+<div class="head"></div>
+<h1>Transactions dialog</h1>
+<div class="gtkshot">
+	<IMG SRC="images/04transaction1.png">
+</div>
+<P>The transaction dialog is used to add, edit and manage the
+<A HREF="02concepts.html#transactions">transactions</A>.<BR>Read also
+the <A HREF="03transactions.html">working with transactions</A> to
+know more about HomeBank possibilities.
+</P>
+<h2>Dialog call</h2>
+<P>This dialog can be called in the following way:
+</P>
+<UL>
+	<LI> from the mainwindow-menu:
+	Transaction / Add...
+
+	<LI> from the mainwindow-toolbar.
+
+	<LI> from the account window-menu:
+	Transaction / Add... / Inherit... / Edit...
+
+	<LI> from the accountwindow transaction list: by double-click on
+	an transaction
+</UL>
+<h2>Using transaction dialog</h2>
+<P>The 'Add' button enable to add an transaction and keep the
+transaction dialog open to add more transactions.
+</P>
+<h3><IMG SRC="images/1.png" NAME="graphics5" ALIGN=BOTTOM WIDTH=12 HEIGHT=12 BORDER=0>
+General infos</h3>
+<table class="widgetinfo">
+	<TR>
+		<td class="wname">
+			<P>Date
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>date of the transaction (dd.mm.yy).<BR>- use shift key + arrow
+			up/down to increase/decrease date.<BR>- the right side button
+			popup a full calendar
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Description
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>description of transaction.<BR>and optionally vehicle cost data's,
+			see <A HREF="05cost.html">vehicle cost</A>.
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Amount
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>amount of the transaction<BR>- the right side +/- button toggle
+			between income/expense
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Account
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>account the transaction should be attached to.
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Validated
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>when the transaction has been checked with your bank statement,
+			you can mark transaction as 'validated'.<BR>the amount will be
+			then integrated in the bank balance.
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Remind
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>when you are in add mode, if you set this option, an
+			transaction of the opposite amount will be inserted also (marked
+			in the list with an '!'), this is very useful when you lent money
+			and don't want to forget about it. The remind transaction are
+			never computed into the balances and are always displayed. an
+			transaction can be a transparent reminder when this is checked.
+			See <A HREF="03transactions.html#remind">working with transaction</A>.
+						</P>
+		</TD>
+	</TR>
+</TABLE>
+<h3><IMG SRC="images/2.png" NAME="graphics6" ALIGN=BOTTOM WIDTH=12 HEIGHT=12 BORDER=0>
+Optional infos</h3>
+<table class="widgetinfo">
+	<TR>
+		<td class="wname">
+			<P>Payment
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>payment for the transaction. It will be displayed as small
+			icons. Possible values are:
+			</P>
+			<UL>
+				<li> (none)
+				<li> credit card
+				<li> check
+				<li> cash
+				<li> transfer
+				<li> internal transfer
+				<li> debit card
+				<li> standing order
+				<li> electronic payment
+				<li> deposit
+				<li> fi fee
+			</UL>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P><BR>Of notebook 2<BR>To account
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>these fields appears depending on the payment selected:<BR>for
+			cheque: select the 2nd cheque notebook for internal transfer:
+			select the destination account
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Info
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>additional informations about payment, such as value date,
+			numbers, cheque numbers.<BR>this is automatically filled for
+			cheque numbers.
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Payee
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>payee of the transaction, see <A HREF="02concepts.html#payee">basic
+			concepts</A> for further details.
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Category
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>category of the transaction, see <A HREF="02concepts.html#category">basic
+			concepts</A> for further details.
+			</P>
+		</TD>
+	</TR>
+	<TR>
+		<td class="wname">
+			<P>Tags
+			</P>
+		</TD>
+		<td class="winfo">
+			<P>tags of the transaction, see <A HREF="02concepts.html#tags">basic
+			concepts</A> for further details.
+			</P>
+		</TD>
+	</TR>
+</TABLE>
+<h3><IMG SRC="images/3.png" NAME="graphics7" ALIGN=BOTTOM WIDTH=12 HEIGHT=12 BORDER=0>
+Fill with archive</h3>
+ Select a source <A HREF="02concepts.html#archives">archive</A>
+to fill in the transaction dialog fields.
+</P>
+</BODY>
+</HTML>

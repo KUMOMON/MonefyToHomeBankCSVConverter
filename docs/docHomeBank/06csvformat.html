@@ -1,0 +1,115 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.0 Transitional//EN">
+<HTML>
+<HEAD>
+	<META HTTP-EQUIV="CONTENT-TYPE" CONTENT="text/html; charset=utf-8">
+	<TITLE>CSV file format</TITLE>
+	<link rel="stylesheet" href="help.css">
+</HEAD>
+<BODY >
+<TABLE BORDER=0 CELLPADDING=0 CELLSPACING=0 STYLE="page-break-before: always">
+	<TR>
+		<TD WIDTH=27>
+			<A HREF="main.html"><IMG SRC="images/go-home.png" NAME="graphics1" ALIGN=BOTTOM WIDTH=27 HEIGHT=27 BORDER=0></A>
+		</TD>
+		<TD WIDTH=27>
+			<A HREF="03carcost.html"><IMG SRC="images/go-previous.png" NAME="graphics2" ALIGN=BOTTOM WIDTH=27 HEIGHT=27 BORDER=0></A>
+		</TD>
+		<TD WIDTH=27>
+			<A HREF="02minor.html"><IMG SRC="images/go-next.png" NAME="graphics3" ALIGN=BOTTOM WIDTH=27 HEIGHT=27 BORDER=0></A>
+		</TD>
+	</TR>
+</TABLE>
+<div class="head"></div>
+<h1>CSV file format</h1>
+<P>With HomeBank you can import/export some of the internal data's in
+the most common file format that is CSV.
+</P>
+<p>Notice: meanwhile csv should uses comma as separator, HomeBank uses semi-colon as separator (this is most common than comma)</p>
+
+<P>The format used for the different files is specific to HomeBank,
+so don't expect to import files your bank should offers you directly,
+you will need to arrange it a little in a spreadsheet like gnumeric
+before.
+</P>
+<P>Below is a description with example of the CSV format that
+HomeBank uses.
+</P>
+
+<!-- separator -->
+
+<h2><A NAME="ope"></A>Transaction</h2>
+<PRE>        Column list:
+        <I>date ; paymode ; info ; payee ; description ; amount ; category</I>
+
+        Values:
+        date     =&gt; format should be DD-MM-YY
+        mode     =&gt; from 0=none to 10=FI fee
+        info     =&gt; a string
+        payee    =&gt; a payee name
+        description  =&gt; a string
+        amount   =&gt; a number with a '.' as decimal separator, ex: -24.12 or 36.75
+        category =&gt; a full category name (category, or category:subcategory)
+</PRE>
+Example:
+</P>
+
+<pre class="csvexample">
+15-02-04;0;;;Some cash;-40,00;Bill:Withdrawal of cash
+15-02-04;1;;;Internet DSL;-45,00;Inline service/Internet
+ ... 
+</pre>
+
+
+<!-- separator -->
+
+<h2><A NAME="pay"></A>Payee</h2>
+<PRE>        Column list:
+        <I>payee_name</I>
+</PRE>
+Example:
+</P>
+<pre class="csvexample">
+payee_name1
+payee_name2
+... </pre>
+</P>
+
+<!-- separator -->
+
+<h2><A NAME="cat"></A>Category</h2>
+<PRE>        Column list:
+        <I>level ; type ; category_name</I>
+
+        Values:
+        level =&gt; 1:category, 2:subcategory
+        type  =&gt; -:expense, +:income</PRE>
+Example:
+</P>
+<pre class="csvexample">
+1;-;Food
+2; ;Grocer
+2; ;Restaurant
+1;+;Wage
+... </pre>
+</P>
+
+<!-- separator -->
+
+<h2><A NAME="bud"></A>Budget</h2>
+<PRE>        Column list:
+        <I>type ; category_name ; value(s)</I>
+
+        Values:
+        type     =&gt; *:monthly, <I>blank</I>:custom
+        value(s) =&gt; a single if type is monthly, 12 ';' separated otherwise</PRE>
+Example:
+</P>
+<pre class="csvexample">
+*;Fuel;45.00
+ ;Domestic animals;1.00;2.00;3.00;4.00;...
+ *;Food;17.00
+... </pre>
+</P>
+
+</BODY>
+</HTML>
